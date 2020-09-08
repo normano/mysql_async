@@ -20,7 +20,7 @@ futures-sink = "0.3"
 lazy_static = "1"
 lru = "0.4.3"
 mio-named-pipes = "0.1.6"
-mysql_common = { branch = "binlog", git = "https://github.com/blackbeam/rust_mysql_common.git" }
+# mysql_common = { branch = "binlog", git = "https://github.com/blackbeam/rust_mysql_common.git" }
 native-tls = "0.2"
 percent-encoding = "2.1.0"
 pin-project = "0.4.6"
@@ -32,6 +32,7 @@ tokio-util = { version = "0.2", features = ["codec"] }
 tokio-tls = "0.3"
 twox-hash = "1"
 url = "2.1"
+mysql_common = { path = "../rust_mysql_common", branch = "binlog", git = "https://github.com/normano/rust_mysql_common.git" }
 
 [dev-dependencies]
 tempfile = "3.1.0"
